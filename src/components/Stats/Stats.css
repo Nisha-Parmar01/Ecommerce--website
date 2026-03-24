@@ -1,0 +1,14 @@
+.stats-section {
+  background:var(--white);
+  padding: 50px 0;
+}
+
+.stats-section h2 {
+  color:var(--primary-color);
+  font-weight: 700;
+}
+
+.stats-section p {
+  color: #666;
+  margin-top: 5px;
+}

@@ -1,0 +1,49 @@
+.about-hero {
+  background: linear-gradient(135deg, #0a0f1c, #1a0d0d);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.05) 0px,
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px,
+    transparent 40px
+  );
+  pointer-events: none;
+}
+
+.story-badge {
+  background: var(--primary-color);
+  color: var(--black);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.hero-text {
+  color: #ccc;
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 32px;
+  }
+}
